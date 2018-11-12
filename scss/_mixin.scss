@@ -1,0 +1,43 @@
+@mixin backgroundColor {
+
+    $colors:#ff972e,#ff99ff,#00e6e6,#8db4db,rgb(183, 230, 91),#00A1F1,rgb(255, 218, 68),rgb(154, 192, 236),rgb(255, 116, 113),#DFCFBE;
+   $repeat:25;
+
+    
+  
+@for $i from 1 through $repeat {
+    &:nth-child(#{length($colors)}n+#{$i}) {
+
+        background: (nth($colors, random(length($colors)-1)));
+        
+    }
+}
+    
+
+
+}
+
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+    @content;
+    }
+  }
+  
+  @mixin mediaMd {
+    @media screen and (min-width: 501px) and (max-width: 768px) {
+      @content;
+      }
+    }
+  
+  
+  @mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+      @content;
+    }
+  }

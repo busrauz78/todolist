@@ -1,0 +1,137 @@
+@import "mixin.scss";
+@import "constant.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 4rem;
+}
+main {
+  & > div.main-header {
+    background-color: #eee;
+    padding: 0.5rem;
+    border-radius: 0 35px 35px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & > input {
+      padding: 0 1rem;
+      width: 100%;
+      border: none;
+      font-size:1.1em;
+   
+    }
+    & > button {
+      padding: 0.5rem 1rem;
+      font-size: 2.4em;
+      border: none;
+    
+      border-radius:4px 25px 25px 4px;
+      background-color: #7575a3;
+      color: white;
+    }
+  }
+  & > div.main-content {
+    overflow: hidden;
+    font-family: $font-1;
+    & > div.container {
+      margin: 0;
+
+      &>div.content-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      background: lighten(#eee,3);
+      margin:2vh 2vh;
+      padding:0 0.5rem;
+ color:#484864;
+ border-radius: 4px;
+        button{
+        
+          background-color: #7575a3;
+       i{
+      
+        font-size: 1.3rem;
+       }
+          border:1px solid  transparent;
+        border-radius: 20%;
+         padding: 1rem;
+         color:white;
+         &:hover{
+           background: #484864;
+           i{
+             color:white;
+           }
+         }
+        }
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin:2vh 4vh;
+        display: grid;
+       
+         grid-template-columns: 50% 50%;
+         grid-column-gap: 1vh; 
+        li {
+          &.todoli {
+            @include backgroundColor;
+          }
+          &.completedli {
+            @include backgroundColor;
+          }
+      
+          margin-bottom: 1.5vh;
+          padding:0 0.5rem;
+          border-radius:4px;
+          div.item-div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            h3.item-header {
+              text-transform: capitalize;
+              font-family: $font-3;
+            }
+            div.buttons {
+              button.btn {
+                font-size: 25px;
+
+                border: none;
+                border-radius: 4px;
+                margin: 2px;
+                padding: 0.3rem 0.4rem;
+                &.btn-check {
+                  color: rgb(0, 141, 71);
+                  
+                }
+                &.btn-trash {
+                  color: rgb(216, 4, 4);
+             
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.todoItems {
+        width: 48%;
+        float: left;
+      }
+      &.completedItems {
+        width: 48%;
+        float: right;
+      }
+    }
+  }
+}
+
+
+@import "responsive.scss";

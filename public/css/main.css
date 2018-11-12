@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 2rem 4rem; }
+
+main > div.main-header {
+  background-color: #eee;
+  padding: 0.5rem;
+  border-radius: 0 35px 35px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  main > div.main-header > input {
+    padding: 0 1rem;
+    width: 100%;
+    border: none;
+    font-size: 1.1em; }
+  main > div.main-header > button {
+    padding: 0.5rem 1rem;
+    font-size: 2.4em;
+    border: none;
+    border-radius: 4px 25px 25px 4px;
+    background-color: #7575a3;
+    color: white; }
+
+main > div.main-content {
+  overflow: hidden;
+  font-family: "Architects Daughter", cursive; }
+  main > div.main-content > div.container {
+    margin: 0; }
+    main > div.main-content > div.container > div.content-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f6f6f6;
+      margin: 2vh 2vh;
+      padding: 0 0.5rem;
+      color: #484864;
+      border-radius: 4px; }
+      main > div.main-content > div.container > div.content-header button {
+        background-color: #7575a3;
+        border: 1px solid  transparent;
+        border-radius: 20%;
+        padding: 1rem;
+        color: white; }
+        main > div.main-content > div.container > div.content-header button i {
+          font-size: 1.3rem; }
+        main > div.main-content > div.container > div.content-header button:hover {
+          background: #484864; }
+          main > div.main-content > div.container > div.content-header button:hover i {
+            color: white; }
+    main > div.main-content > div.container ul {
+      list-style: none;
+      padding: 0;
+      margin: 2vh 4vh;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-column-gap: 1vh; }
+      main > div.main-content > div.container ul li {
+        margin-bottom: 1.5vh;
+        padding: 0 0.5rem;
+        border-radius: 4px; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+1) {
+          background: #ffda44; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+2) {
+          background: #ffda44; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+3) {
+          background: #00A1F1; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+4) {
+          background: #ffda44; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+5) {
+          background: #8db4db; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+6) {
+          background: #8db4db; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+7) {
+          background: #ff972e; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+8) {
+          background: #00A1F1; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+9) {
+          background: #ffda44; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+10) {
+          background: #8db4db; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+11) {
+          background: #9ac0ec; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+12) {
+          background: #00e6e6; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+13) {
+          background: #ff7471; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+14) {
+          background: #ff972e; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+15) {
+          background: #ffda44; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+16) {
+          background: #00e6e6; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+17) {
+          background: #00e6e6; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+18) {
+          background: #ff7471; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+19) {
+          background: #ffda44; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+20) {
+          background: #ff99ff; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+21) {
+          background: #00e6e6; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+22) {
+          background: #ff7471; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+23) {
+          background: #ff972e; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+24) {
+          background: #8db4db; }
+        main > div.main-content > div.container ul li.todoli:nth-child(10n+25) {
+          background: #00e6e6; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+1) {
+          background: #00A1F1; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+2) {
+          background: #8db4db; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+3) {
+          background: #8db4db; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+4) {
+          background: #00e6e6; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+5) {
+          background: #8db4db; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+6) {
+          background: #8db4db; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+7) {
+          background: #ffda44; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+8) {
+          background: #ff972e; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+9) {
+          background: #00e6e6; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+10) {
+          background: #ff7471; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+11) {
+          background: #ff7471; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+12) {
+          background: #ff7471; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+13) {
+          background: #9ac0ec; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+14) {
+          background: #9ac0ec; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+15) {
+          background: #b7e65b; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+16) {
+          background: #00A1F1; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+17) {
+          background: #ff99ff; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+18) {
+          background: #ff7471; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+19) {
+          background: #00e6e6; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+20) {
+          background: #00e6e6; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+21) {
+          background: #b7e65b; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+22) {
+          background: #ffda44; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+23) {
+          background: #ff99ff; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+24) {
+          background: #00A1F1; }
+        main > div.main-content > div.container ul li.completedli:nth-child(10n+25) {
+          background: #8db4db; }
+        main > div.main-content > div.container ul li div.item-div {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center; }
+          main > div.main-content > div.container ul li div.item-div h3.item-header {
+            text-transform: capitalize;
+            font-family: "Gloria Hallelujah", cursive; }
+          main > div.main-content > div.container ul li div.item-div div.buttons button.btn {
+            font-size: 25px;
+            border: none;
+            border-radius: 4px;
+            margin: 2px;
+            padding: 0.3rem 0.4rem; }
+            main > div.main-content > div.container ul li div.item-div div.buttons button.btn.btn-check {
+              color: #008d47; }
+            main > div.main-content > div.container ul li div.item-div div.buttons button.btn.btn-trash {
+              color: #d80404; }
+    main > div.main-content > div.container.todoItems {
+      width: 48%;
+      float: left; }
+    main > div.main-content > div.container.completedItems {
+      width: 48%;
+      float: right; }
+
+@media screen and (max-width: 500px) {
+  body#homepage {
+    padding: 0; }
+    body#homepage main > div.main-header {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      border-radius: 4px;
+      padding: 0;
+      border: 2px solid #aaaae9; }
+      body#homepage main > div.main-header input {
+        font-size: 0.8em;
+        padding: 0 0.5rem; }
+        body#homepage main > div.main-header input::placeholder {
+          color: #7575a3; }
+      body#homepage main > div.main-header button {
+        border-radius: 4px;
+        padding: 0.1rem 0.7rem; }
+    body#homepage main > div.main-content {
+      padding: 0px; }
+      body#homepage main > div.main-content > div.container > div.content-header {
+        font-size: 1em;
+        margin: 0.5vh 0.5vh; }
+        body#homepage main > div.main-content > div.container > div.content-header button {
+          padding: 0.5rem; }
+      body#homepage main > div.main-content ul {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+        margin: 2vh 0.5vh; }
+        body#homepage main > div.main-content ul li {
+          padding: 0 0.4rem; }
+          body#homepage main > div.main-content ul li > div.item-div > h3 {
+            font-size: 1em; }
+          body#homepage main > div.main-content ul li > div.item-div > div.buttons > button {
+            font-size: 23px;
+            background: #ebebeb;
+            border: 0.3px solid #6d6d6d;
+            margin: 0;
+            border-radius: 1px;
+            padding: 0.5rem; }
+      body#homepage main > div.main-content > div.todoItems {
+        float: none;
+        width: 100%; }
+      body#homepage main > div.main-content > div.completedItems {
+        float: none;
+        width: 100%; } }
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  body#homepage {
+    padding: 1rem; }
+    body#homepage main > div.main-content {
+      padding: 0; }
+      body#homepage main > div.main-content ul {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+        margin: 2vh; }
+        body#homepage main > div.main-content ul li {
+          padding: 0 0.4rem; }
+          body#homepage main > div.main-content ul li > div.item-div > h3 {
+            font-size: 1em; }
+          body#homepage main > div.main-content ul li > div.item-div > div.buttons > button {
+            font-size: 23px;
+            background: #ebebeb;
+            border: 0.3px solid #6d6d6d;
+            margin: 0;
+            border-radius: 1px;
+            padding: 0.5rem; }
+      body#homepage main > div.main-content > div.todoItems {
+        float: none;
+        width: 100%; }
+      body#homepage main > div.main-content > div.completedItems {
+        float: none;
+        width: 100%; } }

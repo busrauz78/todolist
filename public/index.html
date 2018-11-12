@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    
+  
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Exo|Gloria+Hallelujah|Neucha" rel="stylesheet">
+      
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+ 
+
+</head>
+
+<body id="homepage">
+    <main>
+        <div class="main-header">
+            <input id="item" type="text" placeholder="Enter An Activity" />
+            <button id="add" type="submit">+</button>  
+        </div>
+        <div class="main-content">
+            <div class="container todoItems">
+                <div class="content-header">
+                        <h2>TO DO</h2>
+                        <button id="hideShowTodo"  ><i class="fas fa-folder"></i> </button>
+                </div>
+                   
+                    <ul class="todo" id="todo"> 
+                       
+                    </ul>
+            </div>
+          <div class="container completedItems">
+                <div class="content-header">
+                        <h2>COMPLETED</h2>
+                        <button id="hideShowCompleted" ><i class="fas fa-folder"></i> </button>
+                </div>
+                
+                <ul class="todo" id="completed">
+ 
+                </ul>
+          </div>
+
+           
+
+
+        </div>
+    </main>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+
+</html>

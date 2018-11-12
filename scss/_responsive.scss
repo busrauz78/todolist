@@ -1,0 +1,134 @@
+@include mediaSm {
+  body#homepage {
+    padding: 0;
+    main {
+
+&>div.main-header{
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   border-radius:  4px ;
+   padding:  0;
+   border:2px solid #aaaae9;
+   
+
+   input{
+      font-size: 0.8em;
+     padding: 0 0.5rem;
+     &::placeholder{
+       color:#7575a3;
+     }
+   }
+   button{
+     border-radius:4px;
+     padding: 0.1rem 0.7rem;
+   }
+}
+
+
+
+      & > div.main-content {
+        padding: 0px;
+
+        &>div.container>div.content-header{
+         font-size: 1em;
+   margin:0.5vh 0.5vh;
+           button{
+             padding: 0.5rem;
+           
+                
+           }
+           
+          
+            
+            }
+          
+        ul {
+          grid-template-columns:100%;
+          grid-gap: 0;
+          margin:2vh 0.5vh;
+          li {
+            padding: 0 0.4rem;
+            &>div.item-div{
+              &>h3{
+                font-size:1em;
+              }
+              &>div.buttons{
+              
+                &>button{
+                  font-size:23px;
+                  background:rgb(235, 235, 235);
+                  border:0.3px solid rgb(109, 109, 109);
+                margin:0;
+                border-radius: 1px;
+                padding:0.5rem;
+                }
+              }
+          
+            }
+          }
+        }
+        & > div.todoItems {
+          float: none;
+          width: 100%;
+        }
+        & > div.completedItems {
+          float: none;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include mediaMd {
+  body#homepage {
+    padding: 1rem;
+    main {
+      & > div.main-content {
+        padding: 0;
+      
+        ul {
+          grid-template-columns:100%;
+          grid-gap: 0;
+          margin:2vh ;
+          li {
+            padding: 0 0.4rem;
+            &>div.item-div{
+              &>h3{
+                font-size:1em;
+              }
+              &>div.buttons{
+              
+                &>button{
+                  font-size:23px;
+                  background:rgb(235, 235, 235);
+                  border:0.3px solid rgb(109, 109, 109);
+                margin:0;
+                border-radius: 1px;
+                padding:0.5rem;
+                }
+              }
+          
+            }
+          }
+        }
+        & > div.todoItems {
+          float: none;
+          width: 100%;
+        }
+        & > div.completedItems {
+          float: none;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include mediaLg {
+}
+
+@include mediaXl {
+}
